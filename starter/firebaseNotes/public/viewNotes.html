@@ -37,6 +37,27 @@
         </div>
       </div>
     </div>
+    <div class="modal" id="editNoteModal">
+        <div class="modal-background" onclick = "closeModal()"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Edit Note</p>
+                    <button class="delete" aria-label="close" onclick ="closeModal()"></button>
+                </header>
+                <section class="modal-card-body">
+                <!-- Content ... -->
+                    Title
+                    <input class="input is-normal" id="editTitleInput" type="text">
+                    Text
+                    <input class="input is-normal" id="editTextInput" type="text">
+                    <input id ="editNoteId" type="hidden">
+                </section>
+                <footer class="modal-card-foot">
+                    <button class="button is-success" onclick = "saveChanges()">Save changes</button>
+                    <button class="button" onclick = "closeModal()">Cancel</button>
+                </footer>
+            </div>
+        </div>
     <footer class="footer">
       <div class="container">
         <div class="content has-text-centered">
